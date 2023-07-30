@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Assignment</title>
+</head>
+<body>
+    <h2>Filter Even Number In JavaScript</h2>
+
+<script>
+    function filterEven(arr)
+    {
+        return arr.filter(number => number % 2 === 0);
+    }
+    let cons_arr=[12, 34, 45, 23, 6, 78, 54, 90];
+    let evennumber=filterEven(cons_arr);
+
+    console.log("Original Array: " + JSON.stringify(cons_arr));
+    console.log("Filtered Even Numbers: " + JSON.stringify(evennumber));
+    </script>
+    
+</body>
+</html>

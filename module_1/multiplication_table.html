@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Assignment</title>
+</head>
+<body>
+    <h2>Multiplication Table Generator In JavaScript</h2>
+    <script>
+        function generateTable(number) {
+            console.log(" Multiplication Table is:", number);
+            for (let i = 1; i <= 10; i++) {
+                const result = i * number;
+                console.log(i + " x " + number + " = " + result);
+            }
+        }
+
+        const givenNumber = 5;
+        //const givenNumber = parseFloat(prompt("Enter the number:"));
+        generateTable(givenNumber);
+    </script>
+    
+</body>
+</html>

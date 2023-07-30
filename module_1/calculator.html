@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Assignment</title>
+</head>
+<body>
+    <h2>Store Calculator In JavaScript</h2>
+    <script>
+        function store(amt) {
+            let per_dis;
+
+            if (amt < 50) {
+                per_dis = 0;
+            } else if (amt >= 50 && amt <= 100) {
+                per_dis = 5;
+            } else if (amt > 100 && amt <= 200) {
+                per_dis = 10;
+            } else {
+                per_dis = 15;
+            }
+
+            const dis_Amt = (amt * per_dis) / 100;
+            const dis_total = amt - dis_Amt;
+            return { dis_Amt, dis_total };
+        }
+
+        // const total_pur_amt = 30;
+        const total_pur_amt = parseFloat(prompt("Enter the total purchase amount:"));
+        const { dis_Amt, dis_total } = store(total_pur_amt);
+
+        console.log("Total purchase amount: $" + total_pur_amt.toFixed(2));
+        console.log("Discounted amount: $" + dis_Amt.toFixed(2));
+        console.log("Total amount after discount: $" + dis_total.toFixed(2));
+    </script>
+</body>
+</html>
