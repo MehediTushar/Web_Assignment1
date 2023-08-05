@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Manipulation</title>
+</head>
+<body>
+    <button id="onClickButton">Click Me</button>
+    <div id="MyMessage"></div>
+    <script>
+        let mybutton=document.getElementById("onClickButton");
+        let Mymessage=document.getElementById("MyMessage");
+        mybutton.addEventListener("click", function() {
+
+        Mymessage.innerHTML = "<p>Hello, Javascript , This is Ostad Platform.</p>";
+});
+    </script>
+    
+</body>
+</html>

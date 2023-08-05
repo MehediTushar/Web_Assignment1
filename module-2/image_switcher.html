@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+    <button id="onClickButton">Switch image 1</button>
+    <button id="onClickButton1">Switch image 2</button>
+    <br>
+    <br>
+    <img id="imageElement" src="https://source.unsplash.com/i25aqE_YUZs" alt="Image1" width="300" >
+    <script>
+          let mybutton=document.getElementById("onClickButton");
+        let mybutton1=document.getElementById("onClickButton1");
+        let imageElement=document.getElementById("imageElement");
+        
+        mybutton.addEventListener("click", function() {
+            imageElement.src = "https://source.unsplash.com/vw3Ahg4x1tY";
+
+            countNumber.textContent = `Count: ${count}`;
+        });
+        mybutton1.addEventListener("click", function() {
+            imageElement.src = "https://source.unsplash.com/qp51FQhBnS0";
+
+            countNumber.textContent = `Count: ${count}`;
+        });
+
+    </script>
+    
+</body>
+</html>
